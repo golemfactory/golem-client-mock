@@ -67,8 +67,8 @@ brew install node
 ```
 and then follow section for [Windows](#Windows)
 
-## Running the project
-
+## Running the project in Development mode
+ 
 In command prompt, in golem-client-mock folder, run:
 ```
 dotnet run -p GolemClientMockAPI
@@ -90,3 +90,12 @@ http://localhost:5001/
 http://localhost:5001/swagger
 ```
 
+## Running the project in Docker
+
+### Building Docker image
+
+Run the `docker_build.bat` script.
+
+### Running Docker image
+
+Run the `docker_run.bat` script.
