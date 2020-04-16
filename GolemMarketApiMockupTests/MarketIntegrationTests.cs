@@ -76,16 +76,16 @@ namespace GolemMarketApiMockupTests
                 NodeId = "ProviderA",
                 Properties = new Dictionary<string, JToken>()
                 {
-                    { "golem.srv.comp.container.docker.image", @"[""golemfactory/ffmpeg""]" },
-                    { "golem.srv.comp.container.docker.benchmark{golemfactory/ffmpeg}", @"7"},
+                    { "golem.srv.comp.container.docker.image", new JArray(@"golemfactory/ffmpeg") },
+                    { "golem.srv.comp.container.docker.benchmark{golemfactory/ffmpeg}", 7},
                     { "golem.srv.comp.container.docker.benchmark{*}", null},
-                    { "golem.inf.cpu.cores", @"4"},
-                    { "golem.inf.cpu.threads", @"8"},
-                    { "golem.inf.mem.gib", @"16"},
-                    { "golem.inf.storage.gib", @"30"},
-                    { "golem.usage.vector", @"[""golem.usage.duration_sec""]"},
-                    { "golem.com.payment.scheme", @"""after"""},
-                    { "golem.com.pricing.model", @"""linear"""},
+                    { "golem.inf.cpu.cores", 4},
+                    { "golem.inf.cpu.threads", 8},
+                    { "golem.inf.mem.gib", 16},
+                    { "golem.inf.storage.gib", 30},
+                    { "golem.usage.vector", new JArray(@"golem.usage.duration_sec")},
+                    { "golem.com.payment.scheme", "after"},
+                    { "golem.com.pricing.model", "linear"},
                     { "golem.com.pricing.est{*}", null},
                 }
             };
@@ -96,16 +96,16 @@ namespace GolemMarketApiMockupTests
                 NodeId = "ProviderB",
                 Properties = new Dictionary<string, JToken>()
                 {
-                    { "golem.srv.comp.container.docker.image", @"[""golemfactory/ffmpeg""]" },
-                    { "golem.srv.comp.container.docker.benchmark{golemfactory/ffmpeg}", @"723"},
+                    { "golem.srv.comp.container.docker.image", new JArray(@"golemfactory/ffmpeg") },
+                    { "golem.srv.comp.container.docker.benchmark{golemfactory/ffmpeg}", 723},
                     { "golem.srv.comp.container.docker.benchmark{*}", null},
-                    { "golem.inf.cpu.cores", @"4"},
-                    { "golem.inf.cpu.threads", @"8"},
-                    { "golem.inf.mem.gib", @"16"},
-                    { "golem.inf.storage.gib", @"30"},
-                    { "golem.usage.vector", @"[""golem.usage.duration_sec""]"},
-                    { "golem.com.payment.scheme", @"""after"""},
-                    { "golem.com.pricing.model", @"""linear"""},
+                    { "golem.inf.cpu.cores", 4},
+                    { "golem.inf.cpu.threads", 8},
+                    { "golem.inf.mem.gib", 16},
+                    { "golem.inf.storage.gib", 30},
+                    { "golem.usage.vector", new JArray(@"golem.usage.duration_sec")},
+                    { "golem.com.payment.scheme", @"after"},
+                    { "golem.com.pricing.model", @"linear"},
                     { "golem.com.pricing.est{*}", null},
                 }
             };
