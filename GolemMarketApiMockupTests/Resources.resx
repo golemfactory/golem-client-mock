@@ -117,11 +117,63 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Property_JsonFlat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Property_JsonFlat.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="Property_JsonFlat" xml:space="preserve">
+    <value>{
+	"golem.srv.comp.container.docker.image":["golemfactory/ffmpeg"],
+	"golem.srv.comp.container.docker.benchmark{golemfactory/ffmpeg}":7,
+	"golem.srv.comp.container.docker.benchmark{*}":null,
+
+	"golem.inf.cpu.cores":4,
+	"golem.inf.cpu.threads":8,
+	"golem.inf.mem.gib":16,
+	"golem.inf.storage.gib":30,
+
+	"golem.usage.vector":["golem.usage.duration_sec"],
+	"golem.com.payment.scheme":"after",
+	"golem.com.pricing.model":"linear",
+	"golem.com.pricing.est{*}":null
+}</value>
   </data>
-  <data name="Property_JsonStructure" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Property_JsonStructure.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="Property_JsonStructure" xml:space="preserve">
+    <value>{
+	"flatProperty" : "someValue",
+	"golem": {
+		"srv":{
+			"comp":{
+				"container":{
+					"docker":{
+						"image":["golemfactory/ffmpeg"],
+						"benchmark{golemfactory/ffmpeg}":7,
+						"benchmark{*}":null
+					}
+				}
+			}
+		},
+		"inf":{
+			"cpu":{
+				"cores":4,
+				"threads":8
+			},
+			"mem":{
+				"gib":16
+			},
+			"storage":{
+				"gib":30
+			}
+		},
+		"com":{
+			"payment":{
+				"scheme":"after"
+			},
+			"pricing":{
+				"model":"linear",
+				"est{*}":null
+			}
+		},
+		"usage":{
+			"vector":["golem.usage.duration_sec"]
+		}
+	}
+}</value>
   </data>
 </root>
