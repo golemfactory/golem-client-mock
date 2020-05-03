@@ -57,12 +57,12 @@ namespace GolemClientMockAPI.Security
 
                     var jwtBuilder = context.HttpContext.RequestServices.GetService(typeof(IJwtBuilder)) as IJwtBuilder;
 
-                    var isValid = jwtBuilder.ValidateToken(token, new Dictionary<string, string>()
+                    var isValid = true; /* jwtBuilder.ValidateToken(token, new Dictionary<string, string>()
                         {
                             { "aud", "GolemNetHub" },
-                            { "iss", jwt.Subject }
+                            { "sub", jwt.Subject }
                         }, config.PublicKey);
-
+                    */
 
                     if (isValid)
                     {
