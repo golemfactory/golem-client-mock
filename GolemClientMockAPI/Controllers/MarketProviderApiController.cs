@@ -267,7 +267,7 @@ namespace GolemMarketMockAPI.Controllers
             {
                 var offers = subscriptions.Select(subs => this.OfferMapper.MapEntityToModel(subs));
 
-                return StatusCode(201, offers);
+                return StatusCode(200, offers);
             }
             catch (Exception exc)
             {
